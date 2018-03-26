@@ -2,16 +2,16 @@ const path = require('path');
 const webpack = require('webpack');
 
 const config = {
-  devServer: {
-    contentBase: path.join(__dirname, 'public'),
-    historyApiFallback: true,
-    port: 3000
-  },
+  // devServer: {
+  //   contentBase: path.join(__dirname, 'public'),
+  //   historyApiFallback: true,
+  //   port: 3000
+  // },
   devtool: 'source-map',
   entry: [
     './client/src/index.jsx'
   ],
-  mode: process.env.MODE || 'production',
+  mode: process.env.MODE || 'development',
   module: {
     rules: [
       { test: /\.(js|jsx)$/,

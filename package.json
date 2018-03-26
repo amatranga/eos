@@ -6,12 +6,13 @@
   "scripts": {
     "build": "webpack",
     "build:watch": "webpack --watch",
-    "start": "webpack-dev-server"
+    "start": "node app.js"
   },
   "author": "amatranga",
   "license": "ISC",
   "dependencies": {
     "eosjs": "^6.1.10",
+    "express": "^4.16.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
