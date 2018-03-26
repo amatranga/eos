@@ -11,6 +11,7 @@ const config = {
   entry: [
     './client/src/index.jsx'
   ],
+  mode: process.env.MODE || 'development',
   module: {
     rules: [
       { test: /\.(js|jsx)$/,
